@@ -8,7 +8,15 @@ def encode(phrase):
 
 
 def decode(phrase):
-    pass
+    string = ''
+    new_num = ''
+    for num in phrase:
+        if num <= 3:
+            new_num = str(0-(num-3))
+        else:
+            new_num = str(num - 3)
+        string += new_num
+    return string
 
 
 def main():
